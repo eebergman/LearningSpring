@@ -1,6 +1,6 @@
 package com.notes;
 
-public class B_InjectingDependencies {
+public class Notes_B {
 	
 	/**
 	 * 1. First you are gong to need another POJO to inject into a POJO

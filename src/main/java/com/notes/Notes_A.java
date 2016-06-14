@@ -1,7 +1,9 @@
 package com.notes;
 
-public class A_GettingStartedWithBeans {
+public class Notes_A {
 
+			//Getting Started with Beans
+	
 /**
  *  1. Start by creating a new Maven project. 
  *  	using command line to select the correct archetype 
