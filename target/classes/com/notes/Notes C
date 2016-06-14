@@ -1,9 +1,9 @@
 
 
 			-- Setting List Properties
-			All in test2
+			
 		
-	Setting List Properties
+	Setting List Properties (test2)
 	  
 	  1. Create the bean
 	  			-Add in other cons-args
@@ -11,3 +11,7 @@
 	  				-Rck- insert list
 	  					-Rck- insert value
 	  						-these are easiest to set in source view. just add as many values as you'd like!
+	  						-If you change <list></list> to <set></set> it will weed out duplicates
+	  						
+	  						
+	  Autowiring

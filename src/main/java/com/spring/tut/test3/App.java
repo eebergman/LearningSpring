@@ -13,6 +13,7 @@ public class App {
 		
 		System.out.println(jungle);
 		
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }
