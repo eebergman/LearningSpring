@@ -9,14 +9,16 @@ public class App {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/tut/test/beans/beans.xml");
 
+		Person person = (Person) context.getBean("person");
 		
-		Person person1 = (Person)context.getBean("person");
-		Person person2 = (Person)context.getBean("person");
+		person.setTaxId(666);
+
+		System.out.println(person);
 		
-		System.out.println(person2);
-	
-		
-		((ClassPathXmlApplicationContext)context).close();
+		Address address2 = (Address)context.getBean("address2");
+		System.out.println(address2);
+
+		((ClassPathXmlApplicationContext) context).close();
 	}
 
 }

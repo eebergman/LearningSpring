@@ -8,6 +8,14 @@ public class Person {
 	private int taxId;
 	private Address address;
 
+	// Factory, static is VERY important, name arrb, but is trad to name
+	// factories something like getInstance
+	
+	public static Person getInstance(int id, String name) {
+//		System.out.println("Creating person using factory method.");
+		return new Person(id, name);
+	}
+
 	public Person() {
 
 	}
@@ -44,17 +52,17 @@ public class Person {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
-	//Methods
-	
+
+	// Methods
+
 	public void onCreate() {
-		//the name of this method is arrb
-		System.out.println("Person created " + this);
+		// the name of this method is arrb
+//		ystem.out.println("Person created " + this);
 	}
-	
+
 	public void onDestroy() {
-		//name of method is arrb
-		System.out.println("Person destroyed.");
+		// name of method is arrb
+//		System.out.println("Person destroyed.");
 	}
 
 	public void speak() {

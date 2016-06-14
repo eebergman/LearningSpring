@@ -2,8 +2,10 @@
 
 			--Injecting dependencies 
 			--Bean Scope
+			--Factory Beans and methods
+			
 		
-	 Injecting dependencies
+	Injecting dependencies
 	  
 	  1. First you are gong to need another POJO to inject into a POJO
 	  			-Include a setter for the dependency 
@@ -12,14 +14,14 @@
 	  					-in the ref field type the id of the bean we are referencing. 
 	 
 	
-	 Bean Scope
+	Bean Scope
 	  
 	  1. in order to change the bean from a singleton you need to change the scope from the beans view 
 	  		to prototype
 	  
 	  
 	  
-	  Init and Destroy methods
+	Init and Destroy methods
 	  
 	  1. In the beans view select bean and look for "init-method"
 	  			-type the name of the method added to the Person POJO (onCreate)
@@ -30,4 +32,35 @@
 	  3. You can add a global init-method and/or destroy-method for the beans.xml file 
 	  			-select the bean tab from the beans view and there they are!
 	  			-naming conventions are the same as the local init and destroy
+	  			
+	  			
+	Factory Beans and Methods
+	
+		1. add the factory method to the POJO
+				-MUST be static
+				-the method will return a POJO of itself. ie in Person class method returns a Person() obj
+				-in Beans view, type the name of the method created into the  	
+				-the method must take in the same args as the bean has. ie p s Person getInstance(int id, String name)
+			
+		2. Factory class
+				-/\ factory-method to the new method in PersonFactory
+				-name factory bean the class name of the factory class
+				-Create a bean for the factory class	
+	  			
+	 
+	 P Namespace
+	 	
+	 	1. Setup
+	 			-added address2 bean
+	 			-Added getters and setters to Address class
+	 			-deleted constructor args from address2 bean
+	 	
+	 	2. in beans GUI click namespaces view
+	  			-check p
+	  			-now we can add "p:" tags to the bean tag. 
+	  			
+	  			
+	  			
+	  			
+	  			
 	  			

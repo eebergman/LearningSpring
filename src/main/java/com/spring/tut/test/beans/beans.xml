@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	default-init-method="init" default-destroy-method="destroy">
+	default-init-method="init" default-destroy-method="destroy"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="person" class="com.spring.tut.test.Person"
-		init-method="onCreate" scope="singleton" destroy-method="onDestroy">
+	<bean id="person" class="com.spring.tut.test.Person" init-method="onCreate"
+		scope="singleton" destroy-method="onDestroy" factory-method="createPerson"
+		factory-bean="personFactory">
 		<constructor-arg name="id" type="int">
 			<value>0</value>
 		</constructor-arg>
@@ -19,8 +21,29 @@
 		<property name="address" ref="address"></property>
 	</bean>
 
+	<bean id="person2" class="com.spring.tut.test.Person" init-method="onCreate"
+		scope="singleton" destroy-method="onDestroy" factory-method="getInstance">
+		<constructor-arg name="id" type="int">
+			<value>654</value>
+		</constructor-arg>
+		<constructor-arg name="name" type="String">
+			<value>Mike</value>
+		</constructor-arg>
+		<property name="taxId">
+			<value>321</value>
+		</property>
+		<property name="address" ref="address"></property>
+	</bean>
+
 	<bean id="address" class="com.spring.tut.test.Address">
 		<constructor-arg name="street" value="No. 1 Church Ln."></constructor-arg>
 		<constructor-arg name="postCode" value="9876"></constructor-arg>
+	</bean>
+
+	<bean id="address2" class="com.spring.tut.test.Address" p:street="23 Vineyard Ln"
+		p:postCode="6789">
+	</bean>
+
+	<bean id="personFactory" class="com.spring.tut.test.PersonFactory">
 	</bean>
 </beans>
