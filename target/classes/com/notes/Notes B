@@ -12,9 +12,22 @@
 	  					-in the ref field type the id of the bean we are referencing. 
 	 
 	
-	
-	
 	 Bean Scope
 	  
-	  1. in order to change the bean from a singleton you need to change the 
+	  1. in order to change the bean from a singleton you need to change the scope from the beans view 
+	  		to prototype
 	  
+	  
+	  
+	  Init and Destroy methods
+	  
+	  1. In the beans view select bean and look for "init-method"
+	  			-type the name of the method added to the Person POJO (onCreate)
+	  2. In beans view, select bean and look for "destroy-method"
+	  			-type the name of the destroy method added to the Person POJO (onDestroy)
+	  			- this will ! work if the scope is set to prototype only on singletons
+	  			
+	  3. You can add a global init-method and/or destroy-method for the beans.xml file 
+	  			-select the bean tab from the beans view and there they are!
+	  			-naming conventions are the same as the local init and destroy
+	  			

@@ -44,6 +44,18 @@ public class Person {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	
+	//Methods
+	
+	public void onCreate() {
+		//the name of this method is arrb
+		System.out.println("Person created " + this);
+	}
+	
+	public void onDestroy() {
+		//name of method is arrb
+		System.out.println("Person destroyed.");
+	}
 
 	public void speak() {
 		System.out.println("Hello, I'm a person.");

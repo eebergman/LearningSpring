@@ -2,11 +2,14 @@
 
 	-Index - spring-tut/src/main/java/com/notes
 	
-	Getting started with Spring Beans  
+	Getting started with Spring and Spring beans  
 			-- Notes A
 			
 	Injecting Dependencies  
 			-- Notes B
 			
 	Bean Scope
+			-- Notes B
+			
+	Init and Destroy methods
 			-- Notes B

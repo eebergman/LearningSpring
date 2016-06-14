@@ -10,6 +10,16 @@ public class Address {
 		this.postCode = postCode;
 	}
 
+	//methods 
+	
+	public void init() {
+		System.out.println("Bean created " + this);
+	}
+	
+	public void destroy() {
+		System.out.println("Bean destroyed " + this);
+	}
+	
 	@Override
 	public String toString() {
 		return "Address [street=" + street + ", postCode=" + postCode + "]";
