@@ -11,6 +11,8 @@
 		<config>src/main/java/com/spring/tut/beans/beans2.xml</config>
 		<config>src/main/java/com/spring/tut/beans/beans3.xml</config>
 		<config>src/main/java/com/spring/tut/beans/beans4.xml</config>
+		<config>src/main/java/com/spring/tut/beans/beans5.xml</config>
+		<config>src/main/java/com/spring/tut/beans/beans6.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

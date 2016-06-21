@@ -1,6 +1,7 @@
 
 
 			-- Setting List Properties
+			--SPEL
 			
 		
 	Setting List Properties (test2)
@@ -14,4 +15,4 @@
 	  						-If you change <list></list> to <set></set> it will weed out duplicates
 	  						
 	  						
-	  Autowiring
+	  SPEL

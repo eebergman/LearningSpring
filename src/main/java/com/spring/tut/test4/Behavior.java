@@ -1,5 +1,6 @@
 package com.spring.tut.test4;
 
+
 public interface Behavior {
 
 	public String race = null;
@@ -9,3 +10,4 @@ public interface Behavior {
 	public void whereAreYouFrom(String text);
 	
 }
+

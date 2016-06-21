@@ -1,0 +1,27 @@
+
+
+			--Getting Started JDBC
+	  
+    1. New pkg com.whatever.whatever.props 
+    	 	-include the following 
+   				jdbc.user = root
+   				jdbc.password = sesame //or whatever the password is
+   				jdbc.driver = com.mysql.jdbc.Driver
+   
+   	2. Class BasicDataSource
+   			- import jar from mvn repo
+   			-make a bean
+   				-ID 'set as' dataSource
+   				-Class 'set as' org.apache.commons.dbcp.BasicDataSource
+   				
+   	3. Setting the values of the properties for the Connection
+   			-In beans view 'Insert property element'
+   			
+   				-1. name 'set as' driverClassName
+   					  value 'set as' ${jdbc.driver}
+   				-2. name 'set as' url
+   					  value 'set as' jdbc.url
+   				-3. name 'set as' password
+   					  value 'set as' jdbc.password
+   				-4. name 'set as' user
+   					  value 'set as' jdbc.user

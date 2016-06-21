@@ -54,6 +54,47 @@
    				-Insert Constructor argument
    					-Index or name are the two really important fields. 
   
+  
+  
+  <!-- spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.3.0.RELEASE</version>
+</dependency>
+  
+  <!-- spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>4.3.0.RELEASE</version>
+</dependency>
+  
+  <!-- spring-beans -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>4.3.0.RELEASE</version>
+</dependency>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 	
 	
 	

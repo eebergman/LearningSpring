@@ -20,4 +20,7 @@ public class App4 {
 		((ClassPathXmlApplicationContext)context).close();
 	}
 
+
+
+	
 }
